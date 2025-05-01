@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Milk 3.2%",
+        "barcode": "4601234567890",
+        "price": 1.29
+    },
+    {
+        "name": "White Bread",
+        "barcode": "4602345678901",
+        "price": 0.65
+    },
+    {
+        "name": "Eggs Large 10 pcs",
+        "barcode": "4603456789012",
+        "price": 1.15
+    },
+    {
+        "name": "Sugar 1 kg",
+        "barcode": "4604567890123",
+        "price": 0.85
+    },
+    {
+        "name": "Butter 82.5%",
+        "barcode": "4605678901234",
+        "price": 2.85
+    },
+    {
+        "name": "Spaghetti Pasta",
+        "barcode": "4606789012345",
+        "price": 0.80
+    },
+    {
+        "name": "Black Tea 100 g",
+        "barcode": "4607890123456",
+        "price": 1.70
+    },
+    {
+        "name": "Instant Coffee 95 g",
+        "barcode": "4608901234567",
+        "price": 3.60
+    },
+    {
+        "name": "Buckwheat 900 g",
+        "barcode": "4609012345678",
+        "price": 1.20
+    },
+    {
+        "name": "Gala Apples 1 kg",
+        "barcode": "4600123456789",
+        "price": 1.50
+    }
+]
