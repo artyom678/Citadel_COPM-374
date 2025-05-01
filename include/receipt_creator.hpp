@@ -93,7 +93,13 @@ private:
 		std::cout << "Enter the quantity : ";
 		std::getline(std::cin, str_quantity);
 
-		int quantity = std::stoi(str_quantity);
+		int quantity;
+		try {
+			quantity = std::stoi(str_quantity);
+		}
+		catch(const std::exception& ex) {
+			throw std::runtime_error("Invalid quantity (expected integer > 0)");
+		}
 
 		receipt.add_item(product, quantity);
 	}
@@ -126,7 +132,7 @@ private:
 		return true;
 	}
 
-	bool get_payment_method(PaymentMethod& method) {
+	bool get_payment_method(PaymentMethod& method) const {
 
 		std::string payment_method_string;
 		while(true) {

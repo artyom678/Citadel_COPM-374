@@ -78,22 +78,6 @@ class Receipt {
 			throw std::runtime_error("The receipt has already been closed"); ///
 		}
 
-		/*
-		if (payment_amount < total) {
-			throw std::invalid_argument("The payment amount is too little");
-		}
-		else if (payment_amount > total) {
-
-			if (method == PaymentMethod::card) {
-				throw std::runtime_error("If you pay by card, then you have to pay the exact value of total");
-			}
-			else if (change_availible + total < payment_amount) {
-				throw std::runtime_error("There's not enough cash to pay a change");
-			}
-
-		}
-		*/
-
 		if (payment_amount < total) {
 
 			throw std::invalid_argument("The payment amount cannot be less than total");
@@ -119,7 +103,7 @@ class Receipt {
 
 public:
 
-	void print_result() {
+	void print_result() const {
 		
 		std::cout << "===== Receipt =====\n";
         std::cout << "Items:\n";
